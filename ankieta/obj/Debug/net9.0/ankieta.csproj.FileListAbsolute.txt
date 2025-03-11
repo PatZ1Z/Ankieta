@@ -64,3 +64,4 @@
 /home/patryk/RiderProjects/ankieta/ankieta/obj/Debug/net9.0/ankieta.csproj.Up2Date
 /home/patryk/RiderProjects/ankieta/ankieta/obj/Debug/net9.0/ankieta.genruntimeconfig.cache
 /home/patryk/RiderProjects/ankieta/ankieta/obj/Debug/net9.0/ref/ankieta.dll
+/home/patryk/RiderProjects/ankieta/ankieta/obj/Debug/net9.0/ankieta.sourcelink.json

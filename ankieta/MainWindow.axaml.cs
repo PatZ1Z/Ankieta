@@ -12,7 +12,20 @@ public partial class MainWindow : Window
 
     private void PersonalDataHandler(object? sender, RoutedEventArgs e)
     {
-        Summary1.Text = Name.Text+" Hobby: "+(Hobby.SelectedItem as ComboBoxItem)?.Content.ToString() +" ";
+        if (Name.Text == null)
+        {
+            
+        }
+
+        if ((Hobby.SelectedItem as ComboBoxItem)?.Content.ToString() == null)
+        {
+            
+        }
+        else
+        {
+            Summary1.Text = Name.Text+" Hobby: "+(Hobby.SelectedItem as ComboBoxItem)?.Content.ToString() +" ";
+        }
+        
     }
 
     private void AnswersHandler(object? sender, RoutedEventArgs e)

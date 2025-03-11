@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ankieta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+998267591b0f76002fc83bbb3d66247ddbdcd895")]
 [assembly: System.Reflection.AssemblyProductAttribute("ankieta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ankieta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
