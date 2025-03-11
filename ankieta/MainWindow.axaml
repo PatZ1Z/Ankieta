@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ankieta.MainWindow"
+        Title="ankieta"
+        Background="LightBlue">
+    
+        <StackPanel HorizontalAlignment="Center" >
+            <TextBlock Text="Podaj swoje imię:" HorizontalAlignment="Center"/>
+            <TextBox
+                x:Name="Name"
+                
+                Width="300"
+                Margin="10"
+                />
+            <TextBlock Text="Wybierz swoje hobby:" HorizontalAlignment="Center"/>
+            <ComboBox x:Name="Hobby" 
+                Width="300" Margin="10" HorizontalAlignment="Center">
+                <ComboBoxItem Content="Technologia" />
+                <ComboBoxItem Content="Czytanie książek" />
+                <ComboBoxItem Content="spacery" />
+                <ComboBoxItem Content="moda" />
+            </ComboBox>
+            <Button Content="Zatwierdź" Margin="10" HorizontalAlignment="Center"
+                    Click="PersonalDataHandler"
+                    />
+        
+            <Separator/>
+            
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="Auto" ></RowDefinition>
+                <RowDefinition  Height="Auto" ></RowDefinition>
+                <RowDefinition  Height="Auto" ></RowDefinition>
+                <RowDefinition  Height="Auto" ></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="10" Text="Pytanie 1"/>
+            <CheckBox x:Name="CheckBox1" Grid.Row="0" Grid.Column="1" Margin="10" Content="Tak"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" Text="Pytanie 2"/>
+            <CheckBox x:Name="CheckBox2" Grid.Row="1" Grid.Column="1" Margin="10" Content="Tak"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin="10" Text="Pytanie 3"/>
+            <CheckBox x:Name="CheckBox3" Grid.Row="2" Grid.Column="1" Margin="10" Content="Tak"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" Margin="10" Text="Pytanie 4"/>
+            <CheckBox x:Name="CheckBox4" Grid.Row="3" Grid.Column="1" Margin="10" Content="Tak"/>
+        </Grid>
+            <Button Content="Zatwierdź" Margin="10" HorizontalAlignment="Center" Click="AnswersHandler"/>
+            <StackPanel>
+                <TextBlock x:Name="Summary1" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="Summary2" HorizontalAlignment="Center"/>
+            </StackPanel>  
+        </StackPanel>
+</Window>
